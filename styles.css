@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color:var(--DarkSlateGrey);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    max-width: 280px;
+    max-height: 100vh;
+    gap: 0.5rem;
+}
+.content__img{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.content__title{
+    font-size: calc(1.1rem + 1vw);
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
+    
+}
+.content__icon{
+    display: flex;
+    gap: 0.8rem;    
+    align-items: start;
+}
+
+p{
+    line-height: 1.2rem;
+    font-size:  0.7em;
+    color: var(--CharcoalGrey);
+    font-weight: 400;
+    text-justify: auto;
+}
+.padding{
+    padding: 0 1rem;
+}
+.text_email{
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
+    margin-top: 1.5rem; 
+}
+#input_email{
+    margin: 0.5rem 0 ;
+    width: 100%;
+    font-size: s0.7rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--Grey);
+    border-radius: 0.2rem;
+}
+.button{
+    padding: 0.8rem 1rem;
+    border:none;
+    border-radius: 0.3rem;
+    margin: 0 1rem 1rem 1rem;
+    font-size: 0.7rem;
+    color:var(--White);
+    background-color: var(--DarkSlateGrey);
+}
