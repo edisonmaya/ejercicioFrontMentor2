@@ -90,16 +90,22 @@ p{
     }
     
     .agradecimiento__icon{
-        width: 10vw;
+        width: min-content;
         height: 10vh;
+    }
+    h2{
+        color: var(--DarkSlateGrey)
     }
     
     .agradecimiento__button{
         width: 100%;
+        margin-bottom: 1rem;
     }
     .agradecimiento__container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 1rem;
+        flex:1;
     }
 }
