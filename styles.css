@@ -77,8 +77,7 @@ p{
     
 }
 
-@media (width > 700px)
-{
+
     .agradecimiento{
         display: flex;
         flex-direction: column;
@@ -108,4 +107,18 @@ p{
         gap: 1rem;
         flex:1;
     }
-}
+    .agradecimiento{
+        display: none;
+    }
+    .show--agradecimiento{
+        display: flex;
+    }
+    .oculta--content{
+        display: none;
+    }
+    .show--content{
+        display: flex;
+    }
+    .oculta--agradecimiento{
+        display: none;
+    }

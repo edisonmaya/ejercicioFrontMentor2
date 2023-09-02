@@ -14,9 +14,7 @@
   <section class="content">
     
     <img src="./src/assets/images/illustration-sign-up-mobile.svg" alt="Imagen" class="content__img">
-    
     <h3 class="content__title padding">Stay updated!</h3> 
-    
     <p class="padding">Join 60,000+ product managers receiving monthly updates on:</p>
     
     <div class="content__icon padding"> 
@@ -28,23 +26,23 @@
     <div class="content__icon padding">
       <img src="./src/assets/images/icon-list.svg" alt="Icon List"><p>And much more!</p>
     </div>
-    <form action="" class="padding">
+    <form action="" class="form padding">
     <label for="input_email" class="padding">
       <h6 class="text_email ">Email address</h6>
-      <input type="email" name="input_email" id="input_email" placeholder="email@company.com" required> 
+      <input type="email" name="input_text_email"  id="input_email" minlength="3" placeholder="email@company.com" autofocus required> 
     </label>
-    <button type="submit" value="submit" class="button">Subscribe to monthly newsletter</button>
-  </form>
+    <button type="submit" id="input_text_email" class="button btn--submit">Subscribe to monthly newsletter</button>
+  </form><!--onclick="getValueInput()"-->
   </section>
 
   <section class="agradecimiento padding">
     <div class="agradecimiento__container">
         <img class="agradecimiento__icon" src="./src/assets/images/icon-list.svg" alt="Icon List">
         <h2>Thanks for subscribing!</h2>
-        <p>A confirmation email has been sent to <span>ash@loremcompany.com.</span>Please open it and click the button inside to confirm your subscription.</p>
+        <p>A confirmation email has been sent to <span id="#valueInput">ash@loremcompany.com.</span>Please open it and click the button inside to confirm your subscription.</p>
       </div>
     <div class="agradecimiento__button">
-      <button type="submit" value="submit" class="button">Dismiss message</button>
+      <button type="submit" class="button btn--agradecimiento">Dismiss message</button>
     </div>    
   </section>
   
@@ -65,6 +63,7 @@
   
 
   -->  
-
+  <script src="./src/main.js"></script>
 </body>
+
 </html>
